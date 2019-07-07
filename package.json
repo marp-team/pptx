@@ -1,6 +1,6 @@
 {
   "name": "@marp-team/pptx",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A wrapper module for creating PPTX using PptxGenJS, with less module size",
   "license": "MIT",
   "author": {
