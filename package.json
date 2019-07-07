@@ -1,0 +1,54 @@
+{
+  "name": "@marp-team/pptx",
+  "version": "0.0.0",
+  "description": "A wrapper module for creating PPTX using PptxGenJS, with less module size",
+  "license": "MIT",
+  "author": {
+    "name": "Marp team",
+    "url": "https://github.com/marp-team"
+  },
+  "contributors": [
+    {
+      "name": "Yuki Hattori",
+      "url": "https://github.com/yhatt"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marp-team/pptx"
+  },
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "dist/",
+    "index.js",
+    "index.d.ts"
+  ],
+  "browser": {
+    "fs": false,
+    "https": false,
+    "image-size": false,
+    "jsdom": false,
+    "os": false,
+    "path": false
+  },
+  "scripts": {
+    "build": "node build.js",
+    "prepack": "yarn -s build",
+    "version": "curl https://raw.githubusercontent.com/marp-team/marp/master/version.js | node && git add -A CHANGELOG.md"
+  },
+  "devDependencies": {
+    "cpy": "^7.3.0",
+    "pptxgenjs": "^2.5.0",
+    "rimraf": "^2.6.3"
+  },
+  "dependencies": {
+    "image-size": "^0.7.4",
+    "jquery": "^3.4.1",
+    "jsdom": "^15.1.1",
+    "jszip": "^3.2.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
