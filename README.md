@@ -1,3 +1,7 @@
+_**NOTE**: This module was created for PptxGenJS v2. The latest [PptxGenJS v3](https://gitbrent.github.io/PptxGenJS/) has improved module size and type definition. We've no longer maintained `@marp-team/pptx` so you should use [`pptxgenjs`](https://www.npmjs.com/package/pptxgenjs)._
+
+---
+
 # @marp-team/pptx
 
 A wrapper module for creating PPTX using [PptxGenJS](https://github.com/gitbrent/PptxGenJS), with the least module size.
